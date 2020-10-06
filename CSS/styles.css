@@ -1,0 +1,115 @@
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+  .name{
+  font-style: bold;
+  margin-right: 50px;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  background: #606060;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.navbar-dark {
+    background-color: #808080; }
+
+img{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 15px;
+}
+
+form{
+  width: 100%;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.projects{
+  font-size: 30px;
+  font-style: bold;
+  font-family: serif;
+  color: grey;
+  border: black solid 3px;
+  border-radius: 0px 50px 0px 50px;
+}
+.projects-images{
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.element{
+  border-top: black solid 3px;border-left: black solid 3px;border-left: black solid 3px;
+  border-right: black solid 3px;
+  background-color: #c0c0c0;
+}
+.element-first{
+  border-top: black solid 3px;border-left: black solid 3px;border-left: black solid 3px;
+  border-right: black solid 3px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #c0c0c0;
+}
+.element-last{
+  border-top: black solid 3px;border-left: black solid 3px;
+  border-right: black solid 3px;
+  border-bottom: black solid 3px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #c0c0c0;
+}
+.element-unique{
+  border-top: black solid 3px;border-left: black solid 3px;
+  border-right: black solid 3px;
+  border-bottom: black solid 3px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #c0c0c0;
+}
+.body{
+  margin-bottom: 100px;
+}
+.paragraph{
+  border-bottom:  black solid 3px;
+  margin-bottom: -2px;
+}
+
+.btn-full{
+  width: 100%;
+}
+
+@media (max-width:768px){
+  .element{
+    border-top: black solid 3px;border-left: black solid 3px;border-left: black solid 3px;
+    border-right: black solid 3px;
+    background-color: #c0c0c0;
+  }
+  .element-first{
+    border-top: black solid 3px;border-left: black solid 3px;border-left: black solid 3px;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+  }
+  .element-last{
+    border-top: black solid 3px;border-left: black solid 3px;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+  }
+}

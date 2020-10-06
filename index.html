@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+
+
+  <title>What'sapp link generator</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">  <a class="nav-link name"><span > <strong> The X Coders </strong> </span></a> </li>
+          <li class="nav-item"> <a class="nav-link" target = "_blank" href="https://www.linkedin.com/in/anass-abea/"><span class="fa fa-linkedin fa-lg"></span> Linked In</a> </li>
+          <li class="nav-item"> <a class="nav-link" target = "_blank" href="https://github.com/Anass-ABEA"><span class="fa fa-github fa-lg"></span> Github</a> </li>
+          <li class="nav-item"> <a class="nav-link" target = "_blank" href="https://stackoverflow.com/users/11003330/anass-abea"><span class="fa fa-stack-overflow fa-lg"></span> Stack Overflow</a> </li>
+          <li class="nav-item"> <a class="nav-link" target = "_blank" href="https://www.youtube.com/channel/UCTK0fGhApaJlERojmqmn_YQ"><span class="fa fa-youtube fa-lg"></span> Youtube</a> </li>
+          <li class="nav-item"> <a class="nav-link" target = "_blank" href="https://api.whatsapp.com/send?phone=+212637958106"><span class="fa fa-whatsapp fa-lg"></span> What'sapp</a> </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <header class ="jumbotron">
+    <div class = "container">
+
+      <form class="" action="index.html">
+
+        <div class = "row">
+          <div class="col-12 col-sm-3 align-self-center text-center">
+            <img src="img/wtsp.png" alt=""/>
+          </div>
+          <div class="col-12 col-sm-9  align-self-center text-center">
+            <div class="form-group row">
+              <label for="telnum" class="col-6 col-md-2 col-form-label">Phone Number</label>
+              <div class=" col-6 col-sm-3">
+                <input type="text" class="form-control" id="code" name="country code" placeholder="+XXX">
+              </div>
+              <div class="col-12 col-sm-7">
+                <input type= "text" class="form-control" id="number" name="phone number" placeholder="0XXXXXXXXX">
+              </div>
+            </div>
+            <div class="col-4 offset-4">
+              <button type="button" class="btn btn-primary" id = "generate"  name="Generate Link">Generate Link</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="row hide" id ="result">
+      <div class="col-10 offset-2">
+        <span>Result is: </span>
+      </div>
+      <div class="col-10 col-sm-6 offset-1 offset-sm-2">
+        <input type="text" id= "res"  class="form-control" name="" value="">
+      </div>
+
+      <div class="col-12 col-sm-4 offset-1 offset-sm-0 align-self-center text-center">
+        <div class="row  align-self-center text-center">
+          <div class="col-5 align-self-center text-center">
+            <button type="button" id = "copy" class="btn btn-secondary" name="COPY">COPY</button>
+          </div>
+          <div class="col-5 align-self-center text-center">
+            <button type="button" id = "open" class="btn btn-success" name="OPEN">OPEN</button>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="body">
+    <div class="container">
+
+
+      <div  class="row" style="padding-left: 15px;">
+        <div class="col-12" style="margin-left:20px">
+          <div class="col-12 col-md-6 offset-md-3 text-center align-center ">
+            <p class= "projects">My previous projects</p>
+          </div>
+        </div>
+        <div class="col-12" style="margin:20px;">
+          <div class="col-12 col-md-6 offset-md-3 ">
+            <button id="apps-btn" onclick="AppsBtnClick()" class="btn btn-primary btn-full" type="button" data-toggle="collapse" data-target="#apps"> <i class="fa fa-eye"></i> Show Mobile Applications</button>
+          </div>
+        </div>
+        <div class="collapse btn-full" id ="apps">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-1 element-first text-center" >
+              <img class="projects-images " src="./img/dailydiab.webp" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>Dialy Diabs:</strong>  an android phone app for diabetics to monitor their blood sugar
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 offset-md-1 element-last text-center">
+              <img class="projects-images" src="./img/bt.webp" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>Arduino Bluetooth receiver:</strong>  an android phone app for robots geeks. Used to connect to an Arduino board and send messages to the phone as values
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div  class="col-12" style="margin:20px;">
+          <div class="col-12 col-md-6 offset-md-3 ">
+            <button  id= "desktop-btn" onclick="DekstopBtnClick()" class="btn btn-primary btn-full" type="button" data-toggle="collapse" data-target="#desktop"> <i class="fa fa-eye"></i> Show Desktop Projects</button>
+          </div>
+        </div>
+        <div class="collapse" id="desktop">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-1 element-unique text-center">
+              <img class="projects-images" src="./img/project-java.png" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>The Flight Host:</strong>  a java based desktop application made to allow users to book, update and cancel flights. It also allows admins to add, update and remove the booked seats, flights, planes and admins as well.
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12" style="margin:20px;">
+          <div class="col-12 col-md-6 offset-md-3 ">
+            <button onclick="pyBtnClick()" id="py-btn" class="btn btn-primary btn-full" type="button" data-toggle="collapse" data-target="#py"> <i class="fa fa-eye"></i> Show Python Projects</button>
+          </div>
+        </div>
+        <div class="collapse" id="py">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-1 element-first text-center">
+              <img class="projects-images" src="./img/snake.png" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>The Snake:</strong>  a simple python made desktop application using the "pygame" library.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 offset-md-1 element-last text-center">
+              <img class="projects-images" src="./img/chess.png" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>Chess:</strong> a simple python made desktop application using the "pygame" library to play chess player vs player (PVP).
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12" style="margin:20px;">
+          <div class="col-12 col-md-6 offset-md-3 ">
+            <button id="web-btn" onclick="webBtnClick()" class="btn btn-primary btn-full" type="button" data-toggle="collapse" data-target="#web"> <i class="fa fa-eye"></i> Show Web Projects</button>
+          </div>
+        </div>
+        <div class="collapse btn-full" id ="web">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 offset-md-1 element-unique text-center" >
+              <img class="projects-images " src="./img/actree.png" width="180" height="180">
+            </div>
+            <div class="col-sm-12 col-md-5  align-self-center">
+                <p>
+                  <strong>Actree:</strong> a website that invites people to plant virtual trees and displays data gathered from NASA database. The data is displayed
+                  either in graphs or in the onsite map. The website contains two pages (index.htm & AcTree.html).
+                </p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function enableDisable(identifier,content){
+    if ( document.getElementById(identifier).classList.contains('btn-primary') ){
+      document.getElementById(identifier).innerHTML = "<i class='fa fa-eye-slash'></i> Hide "+content;
+      document.getElementById(identifier).classList.remove('btn-primary');
+      document.getElementById(identifier).classList.add('btn-danger');
+    }else{
+      document.getElementById(identifier).innerHTML = "<i class='fa fa-eye'></i> Show "+content;
+      document.getElementById(identifier).classList.add('btn-primary');
+      document.getElementById(identifier).classList.remove('btn-danger');
+    }
+  }
+  function pyBtnClick(){
+    enableDisable("py-btn","Python Projects");
+  }
+  function AppsBtnClick(){
+    enableDisable("apps-btn","Mobile Applications");
+  }
+  function DekstopBtnClick(){
+    enableDisable("desktop-btn","Desktop Projects");
+  }
+  function webBtnClick(){
+    enableDisable("web-btn","Web Projects");
+
+  }
+</script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+document.getElementById("generate").onclick = function() {execute()};
+
+function execute() {
+
+  var number = document.getElementById("code").value
+  number = number.replaceAll('+','');
+  var txt = document.getElementById("number").value;
+  if (txt.length == 0 || number.length == 0){
+
+    alert("please fill the fields");
+
+  }else{
+    txt = txt.replaceAll(' ','');
+    txt = txt.replaceAll('-','');
+    const link = "https://api.whatsapp.com/send?phone=";
+    document.getElementById("res").value= link.concat(number.concat(txt.substring(1)));
+    document.getElementById("result").style.visibility = "visible";
+  }
+}
+document.getElementById("copy").onclick = function() {copy()};
+function copy() {
+  var copyText = document.getElementById("res");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("text copied!");
+
+}
+
+
+document.getElementById("open").onclick = function() {openLink()};
+var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+function openLink() {
+  var copyText = document.getElementById("res").value;
+  window.open(copyText,'_blank');
+}
+
+</script>
+
+
+
+</body>
+
+</html>
