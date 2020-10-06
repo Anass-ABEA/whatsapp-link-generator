@@ -11,7 +11,7 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  background: #606060;
+  border: solid black 2px;
 }
 
 body {
@@ -30,7 +30,9 @@ img{
 form{
   width: 100%;
 }
-
+#result{
+  margin-bottom: 50px;
+}
 .hide{
   visibility: hidden;
 }
