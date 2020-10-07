@@ -16,7 +16,12 @@
 
 body {
   padding: 50px 0px 0px 0px;
+
   z-index: 0; }
+
+div{
+  overflow-x: hidden;
+}
 
 .navbar-dark {
     background-color: #808080; }
@@ -95,6 +100,9 @@ input{
 }
 
 @media (max-width:768px){
+  #projects-body .collapse .col-sm-12{
+    margin: 20px;
+  }
   .element{
     border-top: black solid 3px;border-left: black solid 3px;border-left: black solid 3px;
     border-right: black solid 3px;
@@ -243,6 +251,7 @@ border-radius: 2px; }
   padding: 2px 16px;
   color: white;
 }
+
 
 img.demo {
   opacity: 0.6;
